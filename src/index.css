@@ -1,0 +1,17 @@
+:root{
+    --main-bg: #E5E5E5;
+    --primary: #205295;
+    --black: #000000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px){
+    
+    .container{
+        padding: 0 20px;
+    }
+}
