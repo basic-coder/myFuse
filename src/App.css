@@ -1,3 +1,19 @@
 .main{
     background-color: var(--main-bg);
 }
+
+.overlay{
+    background: linear-gradient(110.23deg, rgba(255, 255, 255, 0.63) 26.99%, rgba(255, 219, 219, 0) 157.62%);
+    backdrop-filter: blur(25px);
+    background: linear-gradient(110.23deg, rgba(255, 255, 255, 0.63) 26.99%, rgba(255, 219, 219, 0) 157.62%);
+    transition: opacity 0.5s 0.1s, top 0s 1s;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    display: none;
+}
+
+.overlay.active{
+    display: block;
+}
