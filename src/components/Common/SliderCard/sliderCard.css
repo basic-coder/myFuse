@@ -1,0 +1,63 @@
+.slider__card{
+    display: flex;
+    background-color: #000;
+    color: #eee;
+    padding: 12px;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.slider__card .slider__card_img{
+    height: 88px;
+    width: 111px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.slider__card .slider__card_img img{
+    height: 30px;
+}
+
+.slider__card_field_location span,
+.slider__card_field_location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider__card_field_location{
+    gap: 15px;
+}
+
+.slider__card_company{
+    margin-bottom:10px;
+}
+
+.slider__card_role,
+.slider__card_field_location span,
+.slider__card_field_location{
+    font-size: 12px;
+}
+
+.slider__card_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1180px) {
+
+.slider__card_role, .slider__card_field_location span, .slider__card_field_location {
+    font-size: 11px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+}

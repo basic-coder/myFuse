@@ -37,6 +37,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: var(--secondary);
 }
 
 .btn{
@@ -47,6 +48,7 @@ body{
     color: var(--main-bg);
     text-decoration: none;
     border-radius: 5px;
+    width: fit-content;
 }
 
 @media screen and (max-width: 1100px){
