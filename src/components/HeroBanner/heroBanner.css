@@ -1,0 +1,73 @@
+.hero__banner {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+.hero__banner .hero__banner_right,
+.hero__banner .hero__banner_left {
+    width: 45%;
+}
+
+.hero__banner .hero__banner_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__banner .hero__banner_right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero__banner .hero__banner_left .title {
+    margin-bottom: 12px;
+}
+
+.hero__banner .hero__banner_left .desp {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .hero__banner .hero__banner_right,
+    .hero__banner .hero__banner_left {
+        width: 50%;
+    }
+
+    .hero__banner .hero__banner_left{
+        padding-right: 50px;
+    }
+
+    .hero__banner {
+        padding: 100px 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .hero__banner {
+        padding: 50px 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero__banner .hero__banner_right,
+    .hero__banner .hero__banner_left {
+        width: 100%;
+    }
+
+    .hero__banner .hero__banner_left .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .hero__banner .hero__banner_left{
+        padding-right: unset;
+    }
+
+
+}
