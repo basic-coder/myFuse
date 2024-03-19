@@ -30,7 +30,7 @@ const HeroBanner = () => {
       location: "Bengaluru",
       role: "Associate Analyst",
       logo: heroCard3
-    }
+    },
   ]
 
   return (
@@ -41,7 +41,7 @@ const HeroBanner = () => {
             <Link to="/" className='btn' >Open the Gateway</Link>
         </div>
         <div className="hero__banner_right">
-            {DataArray.map((data,index)=> <SliderCard key={index} data={data} />)}
+            {DataArray.map((data,index)=> <SliderCard key={index} index={index} data={data} />)}
         </div>
     </div>
   )

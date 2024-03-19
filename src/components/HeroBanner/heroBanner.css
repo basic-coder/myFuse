@@ -18,7 +18,8 @@
 .hero__banner .hero__banner_right {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 40px;
 }
 
 .hero__banner .hero__banner_left .title {
