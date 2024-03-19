@@ -12,3 +12,4 @@ branch
 feature/common-add-ons
 feature/navbar
 feature/hero-banner
+feature/titleDescriptionBox

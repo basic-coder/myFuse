@@ -1,0 +1,41 @@
+.title__description{
+    display: flex;
+}
+
+.title__description.border{
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.title__box{
+    width: 40%;
+    padding-top: 60px;
+    padding-right:60px ;
+}
+
+.title__box.border{
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.desp__box{
+    padding-top: 60px;
+    width: 60%;
+    padding-left:60px ;
+}
+
+@media screen and (max-width: 767px) {
+
+    .title__description{
+        flex-direction: column;
+    }
+
+    .title__box,
+    .desp__box{
+        width: 100%;
+        padding: 0;
+    }
+
+    .title__box{
+        padding: 40px 0;
+    }
+
+}
