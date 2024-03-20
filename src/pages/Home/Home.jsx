@@ -18,6 +18,7 @@ import Newsletter from '../../components/Newsletter/Newsletter'
 import RecentJobs from '../../components/RecentJobs/RecentJobs'
 import MyfuseWorks from '../../components/MyfuseWorks/MyfuseWorks'
 import SpotlightCards from '../../components/SpotlightCards/SpotlightCards'
+import ResumeBuilder from '../../components/ResumeBuilder/ResumeBuilder'
 
 const Home = () => {
 
@@ -32,6 +33,7 @@ const Home = () => {
         <MyfuseWorks />
         <SpotlightCards />
         <RecentJobs />
+        <ResumeBuilder />
         <Newsletter title="Join Our Newsletter" description='"Stay in the loop and never miss out on our latest updates and exclusive content. Subscribe to our newsletter to receive fresh insights and news delivered right to your inbox."' />
     </div>
   )
