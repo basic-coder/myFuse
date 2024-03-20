@@ -66,7 +66,7 @@ const Testimonial = () => {
         modules={[Autoplay]}
       >
         {
-          items?.map((item, index) => (<SwiperSlide> <TestimonialCard data={item} key={index} /></SwiperSlide>))
+          items?.map((item, index) => (<SwiperSlide key={index}> <TestimonialCard data={item} key={index} /></SwiperSlide>))
         }
       </Swiper>
     

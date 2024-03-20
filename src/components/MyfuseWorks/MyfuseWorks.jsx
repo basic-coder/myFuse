@@ -3,6 +3,7 @@ import './myfuseWorks.css'
 import Image1 from '../../images/myfuseWorks/myfuseWorks1.png'
 import Image2 from '../../images/myfuseWorks/myfuseWorks2.png'
 import Image3 from '../../images/myfuseWorks/myfuseWorks3.png'
+import TextReveal from '../TextReveal/TextReveal'
 
 const MyfuseWorks = () => {
 
@@ -35,9 +36,11 @@ const MyfuseWorks = () => {
           dataArray.map((data, index) => (
             <div key={index} className={`myfuseWorks__card ${index % 2 != 0 ? 'left' : '' }`}>
               <div className="myfuseWorks__card_left">
+                <TextReveal >
                 <h4 className='title'>{data.title}</h4>
                 <p className='desp'>{data.para1}</p>
                 <p className='desp'>{data.para2}</p>
+                </TextReveal>
               </div>
               <div className="myfuseWorks__card_right">
                 <img src={data.img} alt="demo" />
