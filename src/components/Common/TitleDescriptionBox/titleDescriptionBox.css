@@ -38,4 +38,12 @@
         padding: 40px 0;
     }
 
+    .title__box.border {
+        border-right: 0;
+    }
+
+    .title__description.container{
+        padding: 0;
+    }
+
 }
