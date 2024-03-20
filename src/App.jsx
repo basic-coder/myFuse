@@ -4,6 +4,7 @@ import Home from './pages/Home/Home.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import { useState } from 'react'
 import Footer from './components/Footer/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes>
         <div className={`overlay ${navActive ? 'active' : ''}`}></div>
+        <ScrollToTop />
         <Footer />
 
       </div>
