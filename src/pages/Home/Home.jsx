@@ -10,6 +10,7 @@ import logoImage3 from '../../images/spotlight/flipkart.png'
 import logoImage4 from '../../images/spotlight/accenture.png'
 import logoImage5 from '../../images/spotlight/american-express.png'
 import StarCard from '../../components/StarCard/StarCard'
+import Newsletter from '../../components/Newsletter/Newsletter'
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
         <SpotlightSlider items={logoImages} />
         <TitleDescriptionBox border={false} title="Regular Challenge" description="Elevate your skills and embrace growth with our Regular Challenge – a daily journey to unlock your full potential." />
         <StarCard />
+        <Newsletter title="Join Our Newsletter" description='"Stay in the loop and never miss out on our latest updates and exclusive content. Subscribe to our newsletter to receive fresh insights and news delivered right to your inbox."' />
     </div>
   )
 }

@@ -14,3 +14,4 @@ feature/navbar
 feature/hero-banner
 feature/titleDescriptionBox
 feature/star-card
+feature/newsletter
