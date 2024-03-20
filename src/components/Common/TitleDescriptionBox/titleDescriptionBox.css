@@ -12,10 +12,6 @@
     padding-right:60px ;
 }
 
-.title__box.border{
-    border-right: 1px solid rgba(0, 0, 0, .1);
-}
-
 .desp__box{
     padding-top: 60px;
     width: 60%;
