@@ -10,8 +10,15 @@ Currently, two official plugins are available:
 branch 
 
 feature/common-add-ons
+
 feature/navbar
+
 feature/hero-banner
+
 feature/titleDescriptionBox
+
 feature/star-card
+
 feature/newsletter
+
+feature/footer
