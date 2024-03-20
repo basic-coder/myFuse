@@ -15,6 +15,7 @@ import logoImage8 from '../../images/spotlight/ncr.png'
 
 import StarCard from '../../components/StarCard/StarCard'
 import Newsletter from '../../components/Newsletter/Newsletter'
+import RecentJobs from '../../components/RecentJobs/RecentJobs'
 
 const Home = () => {
 
@@ -27,6 +28,7 @@ const Home = () => {
         <TitleDescriptionBox border={false} title="Regular Challenge" description="Elevate your skills and embrace growth with our Regular Challenge – a daily journey to unlock your full potential." />
         <StarCard />
         <TitleDescriptionBox border={true} title="Company Spotlight" description="Discover the essence of company in the Spotlight. Learn more about the mission, values, and achievements. Get a closer look at what sets this the company apart." />
+        <RecentJobs />
         <Newsletter title="Join Our Newsletter" description='"Stay in the loop and never miss out on our latest updates and exclusive content. Subscribe to our newsletter to receive fresh insights and news delivered right to your inbox."' />
     </div>
   )
