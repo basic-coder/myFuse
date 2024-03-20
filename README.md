@@ -15,6 +15,8 @@ feature/navbar
 
 feature/hero-banner
 
+feature/company-spotlight
+
 feature/titleDescriptionBox
 
 feature/star-card
