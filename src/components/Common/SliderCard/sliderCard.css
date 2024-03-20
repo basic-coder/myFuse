@@ -120,4 +120,7 @@
         margin: auto;
     }
     
+    .hero__banner .hero__banner_right {
+        margin-right: auto;
+    }
 }
