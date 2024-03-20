@@ -23,4 +23,6 @@ feature/star-card
 
 feature/newsletter
 
+feature/myfuse-works
+
 feature/footer
