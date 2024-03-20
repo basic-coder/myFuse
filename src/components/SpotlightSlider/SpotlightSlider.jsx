@@ -31,7 +31,7 @@ const SpotlightSlider = ({ items }) => {
         modules={[Autoplay]}
       >
         {
-          items?.map((item, index) => (<SwiperSlide> <div className="spotlightSlider__img"> <img key={index} src={item} alt="" /> </div></SwiperSlide>))
+          items?.map((item, index) => (<SwiperSlide key={index}> <div className="spotlightSlider__img"> <img key={index} src={item} alt="" /> </div></SwiperSlide>))
         }
       </Swiper>
     </div>
