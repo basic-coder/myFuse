@@ -13,3 +13,4 @@ feature/common-add-ons
 feature/navbar
 feature/hero-banner
 feature/titleDescriptionBox
+feature/star-card
