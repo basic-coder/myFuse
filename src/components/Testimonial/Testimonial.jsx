@@ -43,7 +43,6 @@ const Testimonial = () => {
         <TitleDescriptionBox title="What Graduates Say About Myfuse!" description="Discover what our satisfied customers have to say about their experiences with our products and services. Read these testimonials to gain insights into the positive impact we've had on their lives" />
         
         <Swiper
-        // install Swiper modules
         className='testimonialSlider__container'
         spaceBetween={0}
         loop={true}

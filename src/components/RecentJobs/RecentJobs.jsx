@@ -9,7 +9,7 @@ import heroCard3 from '../../images/heroSection/heroCard3.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import {  Autoplay, Navigation } from 'swiper/modules';
 
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
@@ -64,7 +64,10 @@ const RecentJobs = () => {
                     delay: 1500,
                     disableOnInteraction: true,
                 }}
-                navigation={true}
+                navigation={{
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next'
+                  }}
                 breakpoints={{
                     1180: {
                         slidesPerView: 3,
@@ -74,7 +77,7 @@ const RecentJobs = () => {
                     },
                 }}
                 scrollbar={{ draggable: true }}
-                modules={[Pagination, Navigation]}
+                modules={[ Autoplay,Navigation]}
             >
                 {DataArray.map((item, index) => (
                     <SwiperSlide key={index}>
