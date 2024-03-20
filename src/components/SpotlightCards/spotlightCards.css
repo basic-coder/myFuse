@@ -1,0 +1,121 @@
+.spotlightCards{
+    padding: 50px 0;
+}
+
+
+.spotlightCards__container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 50px;
+}
+
+.spotlightCards__card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(130deg,#fff,rgba(0, 0, 0, 0.14));
+    padding: 60px;
+    max-width: 900px;
+    width: 80%;
+    align-self: flex-end;
+}
+
+.spotlightCards__card .title__description,
+.spotlightCards__card .desp__box ,
+.spotlightCards__card .title__box{
+    padding: 0;
+    width: 100%;
+}
+
+.spotlightCards__card .title__description{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.spotlightCards__card svg {
+    position: absolute;
+    font-size: 100px;
+    color: var(--primary);
+    left: -50px;
+    top: -50px;
+    transform: rotate(45deg);
+    transition: .5s ease-in-out;
+}
+
+.spotlightCards__card.left svg {
+    left: unset;
+    right: -50px;
+}
+
+.spotlightCards__card.left{
+    align-self: flex-start;
+}
+
+.spotlightCards__card:hover svg {
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .spotlightCards__card .btn {
+        padding: 10px 40px;
+    }
+
+    .spotlightCards__card svg {
+        font-size: 60px;
+        top: -30px;
+        left: -30px;
+    }
+
+    .spotlightCards__card.left svg {
+        right: -30px;
+    }
+
+    .spotlightCards__card {
+        padding: 40px;
+    }
+
+    .spotlightCards__container {
+        gap: 40px;
+    }
+
+    .spotlightCards__card .title__description {
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .spotlightCards__card {
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .spotlightCards__container{
+        padding: 0px 20px;
+        padding-top: 40px;
+        gap: 30px;
+    }
+
+    .spotlightCards__card .title__description {
+        gap: 10px;
+    }
+
+    .spotlightCards__card svg {
+        font-size: 50px;
+        top: -25px;
+        left: -25px;
+    }
+
+    .spotlightCards__card.left svg {
+        right: -25px;
+    }
+
+    .spotlightCards {
+        padding-bottom: 0;
+    }
+
+}
