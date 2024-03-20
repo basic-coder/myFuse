@@ -61,6 +61,11 @@
         width: 100%;
     }
 
+    .hero__banner .hero__banner_right {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .hero__banner .hero__banner_left .title {
         font-size: 28px;
         line-height: 34px;
