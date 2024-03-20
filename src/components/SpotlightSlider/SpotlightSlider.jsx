@@ -8,7 +8,6 @@ const SpotlightSlider = ({ items }) => {
   return (
     <div className='spotlightSlider container'>
       <Swiper
-        // install Swiper modules
         className='spotlightSlider__container'
         spaceBetween={50}
         loop={true}
@@ -29,10 +28,7 @@ const SpotlightSlider = ({ items }) => {
             slidesPerView: 4,
           },
         }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay]}
-        onSlideChange={() => console.log('slide change')}
       >
         {
           items?.map((item, index) => (<SwiperSlide> <div className="spotlightSlider__img"> <img key={index} src={item} alt="" /> </div></SwiperSlide>))
