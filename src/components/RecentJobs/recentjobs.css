@@ -1,0 +1,22 @@
+.recentJobs .swiper {
+    margin-top: 50px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.swiper-button{
+    border: 1px solid rgba(0,0,0,.1);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
