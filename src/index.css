@@ -3,6 +3,7 @@
 :root{
     --main-bg: #E5E5E5;
     --primary: #205295;
+    --primary-hover: #205395dc;
     --black: #000000;
     --secondary: #222831;
 }
@@ -54,6 +55,11 @@ body{
     text-decoration: none;
     border-radius: 5px;
     width: fit-content;
+    transition: background 0.4s;
+}
+
+.btn:hover{
+    background: var(--primary-hover);
 }
 
 @media screen and (max-width: 1100px){

@@ -44,6 +44,11 @@
     color: var(--main-bg);
     padding: 12px 22px;
     border-radius: 5px;
+    transition: background 0.4s;
+}
+
+.navbar li:last-child .nav__link:hover {
+    background-color: var(--primary-hover);
 }
 
 .navbar .nav__icon {
