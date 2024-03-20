@@ -13,8 +13,6 @@ import {  Autoplay, Navigation } from 'swiper/modules';
 
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-// Install Swiper modules
-
 const RecentJobs = () => {
     const DataArray = [
         {
@@ -76,7 +74,6 @@ const RecentJobs = () => {
                         slidesPerView: 2,
                     },
                 }}
-                scrollbar={{ draggable: true }}
                 modules={[ Autoplay,Navigation]}
             >
                 {DataArray.map((item, index) => (

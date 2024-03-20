@@ -55,10 +55,30 @@ body{
     text-decoration: none;
     border-radius: 5px;
     width: fit-content;
+    position: relative;
     transition: background 0.4s;
+    overflow: hidden;
+}
+.btn:before {
+    background: #fff;
+    content: "";
+    height: 305px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -150px;
+    width: 50px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: rotate(35deg);
+    z-index: 4;
 }
 
-.btn:hover{
+.btn:hover::before {
+    left: 120%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover {
     background: var(--primary-hover);
 }
 

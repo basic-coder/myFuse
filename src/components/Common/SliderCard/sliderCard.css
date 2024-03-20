@@ -17,7 +17,7 @@
 } */
 
 .slider__card.active{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .slider__card .slider__card_img{
@@ -103,6 +103,10 @@
     font-size: 8px;
 }
 
+.slider__card.active{
+    transform: scale(1.1);
+}
+
 
 }
 
@@ -110,6 +114,10 @@
 
     .slider__card.active{
         transform: scale(1.1);
+    }
+
+    .hero__banner .hero__banner_right {
+        margin: auto;
     }
     
     .hero__banner .hero__banner_right {

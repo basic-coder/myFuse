@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
@@ -8,7 +8,8 @@ import { IoMdClose } from "react-icons/io";
 const Navbar = ({setNavActive,navActive}) => {
 
   
-  const [linkActive, setLinkActive] = useState(0)
+  const [linkActive, setLinkActive] = useState(0);
+  const [isNavActive, setIsNavActive] = useState(false);
 
   const navArray = [
     { id: 0, label: "Home", link: "/" },
@@ -18,9 +19,28 @@ const Navbar = ({setNavActive,navActive}) => {
     { id: 4, label: "Contact Us", link: "/contactUs" }
   ]
 
+  useEffect(() => {
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        let scrollVal = window.innerWidth < 767 ? 50 : 100;
+        if (scrollPosition > scrollVal) {
+            setIsNavActive(true);
+        } else {
+            setIsNavActive(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
+
   return (
     <>
-    <div className='navbar '>
+    <div className={`navbar ${isNavActive ? 'active' : ''}`}>
       <div className="container">
       <h1 className='nav__logo'>MyFuse<span>.</span>in</h1>
 

@@ -63,10 +63,7 @@ const Testimonial = () => {
             slidesPerView: 2,
           },
         }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Autoplay]}
-        onSlideChange={() => console.log('slide change')}
       >
         {
           items?.map((item, index) => (<SwiperSlide> <TestimonialCard data={item} key={index} /></SwiperSlide>))
