@@ -24,3 +24,5 @@ feature/star-card
 feature/newsletter
 
 feature/footer
+
+feature/company-spotlight-v2
